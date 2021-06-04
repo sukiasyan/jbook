@@ -1,20 +1,6 @@
-<html lang="en">
-  <head> </head>
+<html>
+  <head></head>
   <body>
-    <div id="root"></div>
-    <script>
-      window.addEventListener(
-        "message",
-        (event) => {
-          try {
-            eval(event.data);
-          } catch (err) {
-            const root = document.querySelector("#root");
-            root.innerHTML = <div> + err + </div>;
-          }
-        },
-        false
-      );
-    </script>
+    <h1>Hi there</h1>
   </body>
 </html>
